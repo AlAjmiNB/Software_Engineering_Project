@@ -1,0 +1,267 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="layout.css" />
+</head>
+<body>
+  <header
+    class="font-energetic flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-black text-sm py-3 sm:py-0"
+  >
+    <nav
+      class="relative max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
+      aria-label="Global"
+    >
+      <div class="flex items-center justify-between">
+        <a
+          class="flex text-xl gap-2 items-center justify-center font-semibold text-white"
+          aria-label="Brand"
+          href="/"
+          ><p class="flex-shrink-0">PMU Mentoring Program</p></a
+        >
+        <div class="sm:hidden">
+          <button
+            type="button"
+            class="hs-collapse-toggle size-9 flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-orange-500 text-orange-500 hover:border-orange-500 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1"
+            data-hs-collapse="#navbar-collapse-with-animation"
+            aria-controls="navbar-collapse-with-animation"
+            aria-label="Toggle navigation"
+          >
+            <svg
+              class="hs-collapse-open:hidden flex-shrink-0 size-4"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="3" x2="21" y1="6" y2="6"></line>
+              <line x1="3" x2="21" y1="12" y2="12"></line>
+              <line x1="3" x2="21" y1="18" y2="18"></line></svg
+            ><svg
+              class="hs-collapse-open:block hidden flex-shrink-0 size-4"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M18 6 6 18"></path>
+              <path d="m6 6 12 12"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div
+        id="navbar-collapse-with-animation"
+        class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block"
+      >
+        <div
+          class="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:ps-7"
+        >
+          <a
+            class="font-medium text-white hover:text-orange-500 sm:py-6"
+            href="/"
+            >Home</a
+          ><a
+            class="font-medium text-white hover:text-orange-500 sm:py-6"
+            href="/mentoring"
+            >Mentoring</a
+          >
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="bg-black font-energetic pb-6 sm:pb-8 lg:pb-12">
+    <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+      <div class="py-4"></div>
+      <section
+        class="bg-gray-900 min-h-96 relative md:grid md:grid-cols-2 md:items-center md:gap-6 xl:gap-16 overflow-hidden py-12 px-4 md:p-10 xl:p-12 rounded-lg"
+      >
+        <div class="flex flex-col justify-between">
+          <div class="sm:text-center lg:py-12 lg:text-left xl:py-24">
+            <p
+              class="text-orange-500 mb-4 font-semibold md:mb-6 md:text-lg xl:text-xl"
+            >
+              Fill out the form below to receive a reply via email
+            </p>
+            <h1
+              class="text-white mb-8 text-4xl font-bold sm:text-5xl md:mb-12 md:text-4xl"
+            >
+              Request Information
+            </h1>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://images.pexels.com/photos/326576/pexels-photo-326576.jpeg"
+            loading="lazy"
+            alt="Photo by Fakurian Design"
+            class="h-full w-full object-cover object-center rounded-lg shadow-lg"
+          />
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="bg-white font-energetic py-6 sm:py-8 lg:py-12">
+    <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+      <div class="mb-10 md:mb-16">
+        <h2
+          class="mb-4 text-center text-2xl font-bold text-gray-500 md:mb-6 lg:text-3xl"
+        >
+          Get Feedback
+        </h2>
+      </div>
+      <form class="mx-auto grid max-w-screen-md gap-4 sm:grid-cols-2">
+        <div>
+          <label
+            for="Name-for"
+            class="mb-2 inline-block text-sm text-gray-500 sm:text-base"
+            >Name</label
+          ><input
+            name="Name-for"
+            class="w-full rounded border bg-white text-gray-500 ring-orange-300 px-3 py-2 outline-none transition duration-100 focus:ring"
+          />
+        </div>
+        <div>
+          <label
+            for="Email-for"
+            class="mb-2 inline-block text-sm text-gray-500 sm:text-base"
+            >Email</label
+          ><input
+            name="Email-for"
+            class="w-full rounded border bg-white text-gray-500 ring-orange-300 px-3 py-2 outline-none transition duration-100 focus:ring"
+          />
+        </div>
+        <div>
+          <label
+            for="Subject-for"
+            class="mb-2 inline-block text-sm text-gray-500 sm:text-base"
+            >Subject</label
+          ><input
+            name="Subject-for"
+            class="w-full rounded border bg-white text-gray-500 ring-orange-300 px-3 py-2 outline-none transition duration-100 focus:ring"
+          />
+        </div>
+        <div>
+            <p>
+                  <strong>Type of help needed:</strong>
+            </p>
+            <input type="radio" id="General" name="color" value="General">
+            <label for="red">General Discussion</label><br>
+            <input type="radio" id="Career" name="color" value="Career">
+            <label for="blue">Career Advice and Help</label><br>
+            <input type="radio" id="Mentoring" name="color" value="Mentoring">
+            <label for="green">Mentoring Tips</label>
+        </div>
+        <div class="sm:col-span-2">
+          <label
+            for="message"
+            class="mb-2 inline-block text-sm text-gray-500 sm:text-base"
+            >Message</label
+          ><textarea
+            name="Message-for"
+            class="h-64 w-full rounded border bg-white text-gray-500 ring-orange-300 px-3 py-2 outline-none transition duration-100 focus:ring"
+          ></textarea>
+        </div>
+        <div class="flex items-center justify-between sm:col-span-2">
+          <button
+            id="send-button"
+            class="text-white bg-orange-500 hover:bg-orange-600 active:bg-orange-700 disabled:bg-gray-400 inline-block rounded-lg px-8 py-3 text-center text-sm font-semibold outline-none transition duration-100 focus-visible:ring md:text-base"
+          >
+            Send
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="bg-black font-energetic pt-4 sm:pt-10 lg:pt-12">
+    <footer class="mx-auto max-w-screen-2xl px-4 md:px-8">
+      <div
+        class="mb-16 grid grid-cols-2 gap-12 border-t pt-10 md:grid-cols-4 lg:grid-cols-6 lg:gap-8 lg:pt-12"
+      >
+        <div class="col-span-full lg:col-span-2">
+          <div class="mb-4 lg:-mt-2">
+            <a
+              class="text-white inline-flex items-center gap-2 text-xl font-bold md:text-2xl"
+              aria-label="logo"
+              href="/"
+              ><svg
+                width="95"
+                height="94"
+                viewBox="0 0 95 94"
+                class="h-auto w-5 text-orange-500"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M96 0V47L48 94H0V47L48 0H96Z"></path>
+              </svg>
+              <p class="flex-shrink-0">PMU Mentoring Program</p></a
+            >
+          </div>
+          <p class="text-gray-400 mb-6 sm:pr-8">
+            © 2024 PMU Mentoring Program. Connect, Learn, and Grow.
+          </p>
+        </div>
+        <div>
+          <div class="text-gray-400 mb-4 font-bold uppercase tracking-widest">
+            QUICK LINKS
+          </div>
+          <nav class="flex flex-col gap-4">
+            <div>
+              <a
+                class="text-gray-400 hover:text-orange-500 active:text-orange-600 transition duration-100"
+                href="/"
+                >Home</a
+              >
+            </div>
+            <div>
+              <a
+                class="text-gray-400 hover:text-orange-500 active:text-orange-600 transition duration-100"
+                href="/mentoring"
+                >Mentoring</a
+              >
+            </div>
+          </nav>
+        </div>
+        <div>
+          <div class="text-gray-400 mb-4 font-bold uppercase tracking-widest">
+            CONNECT
+          </div>
+          <nav class="flex flex-col gap-4">
+            <div>
+              <a
+                class="text-gray-400 hover:text-orange-500 active:text-orange-600 transition duration-100"
+                href="https://www.facebook.com/"
+                >Facebook</a
+              >
+            </div>
+            <div>
+              <a
+                class="text-gray-400 hover:text-orange-500 active:text-orange-600 transition duration-100"
+                href="https://www.Twitter.com/"
+                >Twitter</a
+              >
+            </div>
+            <div>
+              <a
+                class="text-gray-400 hover:text-orange-500 active:text-orange-600 transition duration-100"
+                href="https://www.youtube.com/"
+                >Youtube</a
+              >
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="text-gray-400 border-t py-8 text-center text-sm">
+        PMU Mentoring Program © 2024
+      </div>
+    </footer>
+  </div>
+</body>
