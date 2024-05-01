@@ -1,8 +1,15 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="layout.css" />
+  <script>
+    function openPopup() {
+      window.open("login/index.html", "Popup", "width=1200,height=800");
+      return false; // Prevent default action and stop propagation
+    }
+    </script>
+    
 </head>
-<body>
+<body onload> 
   <header
     class="font-energetic flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-black text-sm py-3 sm:py-0"
   >
@@ -171,11 +178,11 @@
           ></textarea>
         </div>
         <div class="flex items-center justify-between sm:col-span-2">
-          <button
+          <button onclick="openPopup()"
             id="send-button"
             class="text-white bg-orange-500 hover:bg-orange-600 active:bg-orange-700 disabled:bg-gray-400 inline-block rounded-lg px-8 py-3 text-center text-sm font-semibold outline-none transition duration-100 focus-visible:ring md:text-base"
           >
-            Send
+            Login and Send
           </button>
         </div>
       </form>
